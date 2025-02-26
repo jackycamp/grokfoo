@@ -8,6 +8,6 @@
     "scripts": ["background.js"]
   },
   "icons": {
-    "48": "icon48.png"
+    "48": "logo.jpg"
   }
 }
