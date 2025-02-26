@@ -2,10 +2,14 @@
 
 ### A basic browser extension that lets you select text on a webpage and send to Grok with commands.
 
+Install the [extension](https://addons.mozilla.org/en-US/firefox/addon/grok-foo/)
+
 When you send to Grok, a new browser tab opens at https://x.com/i/grok, the extension waits for the page to load, injects the prompt
 and submits for you.
 
 ## Disclaimers
+
+I, the developer of this extension, am not affiliated with x.com or grok in anyway.
 
 This project's code is fully open-source. Your prompts, the content you're viewing, and other relevant data are not collected.
 
