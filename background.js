@@ -1,4 +1,4 @@
-// Create the parent context menu item
+// Create the parent context menu item, appears when you right click on a webpage.
 browser.contextMenus.create({
   id: "grok-text",
   title: "Send to Grok",
@@ -42,6 +42,8 @@ browser.contextMenus.onClicked.addListener((info, tab) => {
         // Wait for page to load before injecting script
         setTimeout(() => {
           browser.tabs.executeScript(newTab.id, {
+            // TODO: could move this string of code to its own content.js script
+            // would likely be better for maintainability, performance, etc.
             code: `
             // Find tweet textarea and populate with selected text
             const waitForElement = setInterval(() => {
