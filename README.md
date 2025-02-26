@@ -28,6 +28,8 @@ Publishing a new version of the extension is a manual process (for now).
 Just zip the contents of the grokfoo directory and upload it to firefox-addon developer hub.
 
 ```bash
-cd ..
-zip -r grokfoo.zip grokfoo/ -x "grokfoo/.git/*" "grokfoo/README.md"
+# at the root of this repo run:
+zip -r grokfoo.zip . -x ".git/*" "README.md" "*.zip" ".gitignore"
 ```
+
+Then you can upload `grokfoo.zip`.
